@@ -1,0 +1,632 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --blue: #1e82ee;
+    --yellow: #f18901;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Roboto", sans-serif;
+    color: inherit;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    height: 100px;
+    padding: 0 20px;
+    align-items: center;
+    background-color: rgba(4, 116, 237, 0.4);
+    color: white;
+    position: absolute;
+    z-index: 100;
+    box-shadow: 0 0 5px 0 black;
+}
+
+header .logo {
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+header nav {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-right: 20px;
+}
+
+header .headerBtn {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--yellow);
+    border-radius: 20px;
+    background-color: var(--yellow);
+    cursor: pointer;
+    color: white;
+}
+
+header .headerBtn:hover {
+    background-color: var(--blue);
+    border: 2px solid white;
+    color: white;
+}
+
+.hero {
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hero .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 50;
+    opacity: 50%;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(4, 116, 237, 1) 100%
+    );
+}
+
+.hero .stage {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    z-index: 80;
+    display: flex;
+    gap: 20px;
+}
+
+.hero .content {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    /* margin-top: 120px; */
+}
+
+.hero .content h2 {
+    font-size: 40px;
+}
+
+.hero .content p {
+    margin-bottom: 20px;
+}
+
+.hero .content button {
+    width: 50%;
+    padding: 10px;
+    border: 2px solid var(--yellow);
+    background: var(--yellow);
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.hero form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+    margin: 2%;
+    margin-top: 100px;
+    padding: 2%;
+    border-radius: 2%;
+    box-shadow: 0 0 10px 0;
+    background-color: white;
+}
+
+.hero form h2 {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: var(--blue);
+    line-height: 25px;
+}
+
+.hero form > p {
+    margin-bottom: 20px;
+}
+
+.hero form .field {
+    width: 90%;
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.hero form .stage {
+    display: flex;
+    gap: 10px;
+}
+
+.hero form .field label {
+    width: 40%;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.hero form .field input,
+.hero form .field select {
+    width: 60%;
+    padding: 4px 4px;
+    outline: none;
+    font-size: 13px;
+}
+
+.hero form .field textarea {
+    width: 60%;
+    height: 50px;
+    resize: none;
+    padding: 5px 4px;
+    outline: none;
+    font-size: 14px;
+}
+
+.hero form p {
+    font-size: 14px;
+}
+
+.hero form .field input[type="checkbox"] {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.hero form button {
+    width: 25%;
+    padding: 5px;
+    background-color: var(--yellow);
+    border: 2px solid var(--yellow);
+    color: white;
+    margin-top: 20px;
+}
+
+.promotion {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin: 20px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.promotion h2 {
+    font-size: 40px;
+}
+
+.promotion .stage {
+    width: 90%;
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.promotion .stage h3 {
+    font-size: 25px;
+    z-index: 60;
+}
+
+.promotion .stage .item {
+    padding: 10px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+    animation: bounce2 2s ease infinite;
+    position: relative;
+}
+
+.promotion .stage .item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 60;
+}
+
+.promotion .stage .item img {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    z-index: 50;
+    top: 0;
+}
+
+.products {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.products h2 {
+    font-size: 40px;
+}
+
+.products .stage {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.products .item {
+    width: 24%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.aboutUs {
+    width: 90%;
+    gap: 20px;
+    border-radius: 10px;
+    display: flex;
+    padding: 20px;
+    margin: auto;
+}
+
+.aboutUs h2 {
+    font-size: 40px;
+}
+
+.aboutUs .image {
+    width: 45%;
+    margin: auto;
+}
+
+.aboutUs .image img {
+    width: 100%;
+    height: 370px;
+}
+
+.aboutUs .content {
+    width: 55%;
+}
+
+.aboutUs button {
+    background-color: var(--yellow);
+    padding: 10px;
+    border: 1px solid var(--yellow);
+    box-shadow: 0 0 20px 0;
+    border-radius: 10px;
+    color: white;
+}
+
+.aboutUs p {
+    margin-bottom: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background: var(--blue);
+    color: white;
+}
+
+.braceDialog {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1200;
+}
+
+.braceDialog .content {
+    width: 50%;
+    background-color: white;
+    box-shadow: 0 0 10px 0;
+    position: relative;
+}
+
+.braceDialog form {
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    padding: 2%;
+}
+
+.braceDialog form h2 {
+    text-transform: capitalize;
+    color: var(--blue);
+}
+
+.braceDialog form > p {
+    margin-bottom: 20px;
+}
+
+.braceDialog form .field {
+    width: 90%;
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.braceDialog form .stage {
+    display: flex;
+    gap: 10px;
+}
+
+.braceDialog form .field label {
+    width: 40%;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.braceDialog form .field input,
+.braceDialog form .field select {
+    width: 60%;
+    padding: 4px 4px;
+    outline: none;
+    font-size: 13px;
+}
+
+.braceDialog form .field textarea {
+    width: 60%;
+    height: 50px;
+    resize: none;
+    padding: 5px 4px;
+    outline: none;
+    font-size: 14px;
+}
+
+.braceDialog form p {
+    font-size: 14px;
+}
+
+.braceDialog form .field input[type="checkbox"] {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.braceDialog form button {
+    width: 25%;
+    padding: 5px;
+    background-color: var(--yellow);
+    border: 2px solid var(--yellow);
+    color: white;
+    margin-top: 20px;
+}
+
+.braceDialog .content button {
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    background-color: var(--yellow);
+    border: 2px solid var(--yellow);
+    text-transform: uppercase;
+    border-radius: 10px;
+    color: white;
+}
+
+.close {
+    width: 30px !important;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 !important;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: black !important;
+    border: 2px solid black !important;
+    color: white;
+    cursor: pointer;
+}
+
+#lymphedema,
+#cgm,
+#braces {
+    display: none;
+}
+
+@keyframes bounce2 {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+@media (min-width: 360px) and (max-width: 600px) {
+    @media (min-width: 360px) and (max-width: 600px) {
+        header {
+            height: auto;
+            padding: 10px 4px;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        header img {
+            width: 50%;
+            margin: auto;
+        }
+
+        header nav ul {
+            gap: 10px;
+            margin-right: 0;
+            font-size: 14px;
+        }
+
+        header .headerBtn {
+            padding: 4px;
+            margin-left: 5px;
+        }
+
+        .hero {
+            height: auto;
+        }
+
+        .hero > .stage {
+            flex-direction: column;
+            margin-top: 100px;
+        }
+
+        .hero .content {
+            width: 90%;
+            padding: 5%;
+        }
+
+        .hero .content h2 {
+            font-size: 30px;
+        }
+
+        .hero .content button {
+            width: 70%;
+            padding: 8px;
+        }
+
+        .hero form {
+            width: 90%;
+            margin-top: 50px;
+            padding: 5%;
+            border-radius: 20px;
+        }
+
+        .hero form .stage {
+            flex-direction: column;
+        }
+
+        .hero form h2 {
+            font-size: 18px;
+        }
+
+        .hero form .field label,
+        .hero form .field input,
+        .hero form .field select,
+        .hero form .field textarea {
+            width: 100%;
+        }
+
+        .hero form button {
+            width: 50%;
+        }
+
+        .promotion .stage {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .promotion .stage .item {
+            width: 90%;
+        }
+
+        .products .item {
+            width: 100%;
+        }
+
+        .aboutUs {
+            flex-direction: column;
+            width: 100%;
+            padding: 10px;
+        }
+
+        .aboutUs .image {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .aboutUs .content {
+            width: 100%;
+        }
+
+        .braceDialog .content {
+            width: 90%;
+            padding: 5%;
+            font-size: 10px;
+        }
+
+        .braceDialog form .field input[type="checkbox"] {
+            width: auto;
+            margin-top: 0;
+        }
+
+        .braceDialog .content button {
+            width: 80%;
+            padding: 5px 0;
+        }
+
+        .close {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
