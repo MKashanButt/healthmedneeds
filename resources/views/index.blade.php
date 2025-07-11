@@ -173,8 +173,9 @@
             </div>
             <div class="content">
                 <h2>About Us</h2>
-                <p>At , our mission is to improve patient lives through innovative and dependable medical solutions.
-                    Since 2020, we’ve proudly served over 1,000 patients, providing a comprehensive range of durable
+                <p>At Bargain Medical Supply, our mission is to improve patient lives through innovative and dependable
+                    medical solutions.
+                    Since 2024, we’ve proudly served over 1,000 patients, providing a comprehensive range of durable
                     medical equipment designed to meet diverse health needs.</p>
                 <p>From orthopedic braces to glucose monitors, our products are crafted with a focus on quality,
                     comfort, and effectiveness. We are dedicated to offering the latest advancements in medical
@@ -186,7 +187,7 @@
             </div>
         </section>
         <footer>
-            <p>Copyright Company &#169 Bargain Medical Supply. All Rights Reserved 2020-2025</p>
+            <p>Copyright Company &#169 Bargain Medical Supply. All Rights Reserved 2024-2025</p>
         </footer>
     </main>
     <div class="braceDialog" id="braces">
