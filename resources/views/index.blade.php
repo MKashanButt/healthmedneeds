@@ -41,27 +41,27 @@
                     <div class="stage">
                         <div class="field">
                             <label for="fname">First Name:</label>
-                            <input type="text" name="fname" id="fname">
+                            <input type="text" name="fname" id="fname" required>
                         </div>
                         <div class="field">
                             <label for="lname">Last Name:</label>
-                            <input type="text" name="lname" id="lname">
+                            <input type="text" name="lname" id="lname" required>
                         </div>
                     </div>
                     <div class="stage">
                         <div class="field">
                             <label for="zip_code">Zip Code:</label>
-                            <input type="text" name="zip_code" id="zip_code">
+                            <input type="text" name="zip_code" id="zip_code" required>
                         </div>
                         <div class="field">
                             <label for="phone">Phone no:</label>
-                            <input type="text" name="phone" id="phone">
+                            <input type="text" name="phone" id="phone" required>
                         </div>
                     </div>
                     <div class="stage" style="align-items: first baseline">
                         <div class="field" style="align-items: first baseline">
                             <label for="dob">DOB:</label>
-                            <input type="date" name="dob" id="dob">
+                            <input type="date" name="dob" id="dob" required>
                         </div>
                         <div class="field" style="align-items: first baseline">
                             <label for="message">Message:</label>
@@ -197,27 +197,27 @@
                 <div class="stage">
                     <div class="field">
                         <label for="fname">First Name:</label>
-                        <input type="text" name="fname" id="fname">
+                        <input type="text" name="fname" id="fname" required>
                     </div>
                     <div class="field">
                         <label for="lname">Last Name:</label>
-                        <input type="text" name="lname" id="lname">
+                        <input type="text" name="lname" id="lname" required>
                     </div>
                 </div>
                 <div class="stage">
                     <div class="field">
                         <label for="zip_code">Zip Code:</label>
-                        <input type="text" name="zip_code" id="zip_code">
+                        <input type="text" name="zip_code" id="zip_code" required>
                     </div>
                     <div class="field">
                         <label for="phone">Phone no:</label>
-                        <input type="text" name="phone" id="phone">
+                        <input type="text" name="phone" id="phone" required>
                     </div>
                 </div>
                 <div class="stage" style="align-items: first baseline">
                     <div class="field" style="align-items: first baseline">
                         <label for="dob">DOB:</label>
-                        <input type="date" name="dob" id="dob">
+                        <input type="date" name="dob" id="dob" required>
                     </div>
                     <div class="field" style="align-items: first baseline">
                         <label for="message">Message:</label>
