@@ -73,6 +73,11 @@ class FormResource extends Resource
                     ->label('Date of Birth')
                     ->date()
                     ->sortable(),
+                Tables\Columns\TextColumn::make('dob')
+                    ->label('Date of Birth')
+                    ->date()
+                    ->sortable(),
+                Tables\Columns\TextColumn::make('message'),
                 Tables\Columns\TextColumn::make('zip_code')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('created_at')
