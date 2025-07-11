@@ -83,7 +83,7 @@ class FormResource extends Resource
                 Tables\Columns\TextColumn::make('ip')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('created_at')
-                    ->dateTime()
+                    ->date()
                     ->sortable(),
             ])
             ->filters([
