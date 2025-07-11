@@ -13,9 +13,9 @@ class FormController extends Controller
             'fname' => 'required|max:255',
             'lname' => 'required|max:255',
             'phone' => 'required|max:255',
-            'gender' => 'in:male,female',
             'dob' => 'required|date',
-            'state' => 'required|max:255',
+            'zip_code' => 'required|max:255',
+            'message' => 'required',
         ]);
 
         Form::create($validatedData);

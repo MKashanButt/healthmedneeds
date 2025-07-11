@@ -49,29 +49,26 @@
                         </div>
                     </div>
                     <div class="stage">
-                        <div class="field" style="align-items: baseline;">
-                            <label for="name">Gender:</label>
-                            <select name="gender" id="gender">
-                                <option value="male">Male</option>
-                                <option value="female">Female</option>
-                            </select>
-                        </div>
                         <div class="field">
-                            <label for="state">State:</label>
-                            <input type="text" name="state" id="state">
+                            <label for="zip_code">Zip Code:</label>
+                            <input type="text" name="zip_code" id="zip_code">
                         </div>
-                    </div>
-                    <div class="stage">
                         <div class="field">
                             <label for="phone">Phone no:</label>
                             <input type="text" name="phone" id="phone">
                         </div>
-                        <div class="field">
-                            <label for="dob">Date Of Birth:</label>
+                    </div>
+                    <div class="stage" style="align-items: first baseline">
+                        <div class="field" style="align-items: first baseline">
+                            <label for="dob">DOB:</label>
                             <input type="date" name="dob" id="dob">
                         </div>
+                        <div class="field" style="align-items: first baseline">
+                            <label for="message">Message:</label>
+                            <textarea name="message" id="message"></textarea>
+                        </div>
                     </div>
-                    <div class="field" style="align-items: baseline;">
+                    <div class="field" style="align-items: baseline;width:100%">
                         <input type="checkbox" id="consent">
                         <p>
                             By clicking “Submit”, I give Bargain Medical Supply Inc, a Medicare-accredited supplier of
@@ -208,37 +205,34 @@
                     </div>
                 </div>
                 <div class="stage">
-                    <div class="field" style="align-items: baseline;">
-                        <label for="name">Gender:</label>
-                        <select name="gender" id="gender">
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                        </select>
-                    </div>
                     <div class="field">
-                        <label for="state">State:</label>
-                        <input type="text" name="state" id="state">
+                        <label for="zip_code">Zip Code:</label>
+                        <input type="text" name="zip_code" id="zip_code">
                     </div>
-                </div>
-                <div class="stage">
                     <div class="field">
                         <label for="phone">Phone no:</label>
                         <input type="text" name="phone" id="phone">
                     </div>
-                    <div class="field">
-                        <label for="dob">Date Of Birth:</label>
+                </div>
+                <div class="stage" style="align-items: first baseline">
+                    <div class="field" style="align-items: first baseline">
+                        <label for="dob">DOB:</label>
                         <input type="date" name="dob" id="dob">
                     </div>
+                    <div class="field" style="align-items: first baseline">
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message"></textarea>
+                    </div>
                 </div>
-                <div class="field" style="align-items: baseline;">
-                    <input type="checkbox" name="consent" id="consent">
+                <div class="field" style="align-items: baseline;width:100%">
+                    <input type="checkbox" id="consent">
                     <p>
                         By clicking “Submit”, I give Bargain Medical Supply Inc, a Medicare-accredited supplier of
                         medical equipment, my express written consent to contact me by phone, text message, or
                         prerecorded message at the number I provided. I understand that this contact may relate to
-                        Medicare-covered equipment such as diabetic supplies, back or knee braces, or continuous glucose
-                        monitors. I understand that my consent is not required as a condition of purchase and that I may
-                        revoke it at any time.
+                        Medicare-covered equipment such as diabetic supplies, back or knee braces, or continuous
+                        glucose monitors. I understand that my consent is not required as a condition of purchase
+                        and that I may revoke it at any time.
                     </p>
                 </div>
                 <button name="submit">See If I Qualify</button>

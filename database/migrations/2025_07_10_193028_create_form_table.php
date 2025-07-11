@@ -16,13 +16,7 @@ return new class extends Migration
             $table->string('fname');
             $table->string('lname');
             $table->string('phone');
-            $table->string('gender');
-            $table->text('address')
-                ->nullable();
-            $table->string('medicare_id')
-                ->nullable();
             $table->date('dob');
-            $table->string('state');
             $table->string('zip_code')
                 ->nullable();
             $table->text('message')
