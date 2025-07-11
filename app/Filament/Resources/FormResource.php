@@ -80,6 +80,8 @@ class FormResource extends Resource
                 Tables\Columns\TextColumn::make('message'),
                 Tables\Columns\TextColumn::make('zip_code')
                     ->searchable(),
+                Tables\Columns\TextColumn::make('ip')
+                    ->searchable(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable(),
