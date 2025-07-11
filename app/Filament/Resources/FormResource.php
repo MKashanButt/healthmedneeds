@@ -81,6 +81,10 @@ class FormResource extends Resource
                 Tables\Columns\TextColumn::make('zip_code')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('ip')
+                    ->formatStateUsing(fn($state) => '•••••')
+                    ->tooltip(fn($state) => $state)
+                    ->copyable()
+                    ->copyMessage('IP address copied')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->date()
