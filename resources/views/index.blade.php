@@ -186,7 +186,7 @@
             </div>
         </section>
         <footer>
-            <p>Copyright Company &#169 Bargain Medical Supply. All Rights Reserved 2020-2025/p>
+            <p>Copyright Company &#169 Bargain Medical Supply. All Rights Reserved 2020-2025</p>
         </footer>
     </main>
     <div class="braceDialog" id="braces">
