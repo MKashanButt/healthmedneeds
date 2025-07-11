@@ -74,16 +74,12 @@
                     <div class="field" style="align-items: baseline;">
                         <input type="checkbox" id="consent">
                         <p>
-                            By tapping the "Submit" button, I expressly endorse bargain medical supply inc and Backpain
-                            Discount
-                            Club,Pain
-                            Center to call me or send me recorded messages or messages about their Solid wellbeing,
-                            Diabetic
-                            Supplies, or other Clinical things using electronic advancement to my telephone/cell number
-                            I
-                            entered already. I understand that I am not supposed to give my consent as a condition of
-                            any
-                            purchase.
+                            By clicking “Submit”, I give Bargain Medical Supply Inc, a Medicare-accredited supplier of
+                            medical equipment, my express written consent to contact me by phone, text message, or
+                            prerecorded message at the number I provided. I understand that this contact may relate to
+                            Medicare-covered equipment such as diabetic supplies, back or knee braces, or continuous
+                            glucose monitors. I understand that my consent is not required as a condition of purchase
+                            and that I may revoke it at any time.
                         </p>
                     </div>
                     <button name="submit">See If I Qualify</button>
@@ -236,15 +232,12 @@
                 <div class="field" style="align-items: baseline;">
                     <input type="checkbox" name="consent" id="consent">
                     <p>
-                        By tapping the "Submit" button, I expressly endorse healthmed and Backpain Discount
-                        Club,Pain
-                        Center to call me or send me recorded messages or messages about their Solid wellbeing,
-                        Diabetic
-                        Supplies, or other Clinical things using electronic advancement to my telephone/cell number
-                        I
-                        entered already. I understand that I am not supposed to give my consent as a condition of
-                        any
-                        purchase.
+                        By clicking “Submit”, I give Bargain Medical Supply Inc, a Medicare-accredited supplier of
+                        medical equipment, my express written consent to contact me by phone, text message, or
+                        prerecorded message at the number I provided. I understand that this contact may relate to
+                        Medicare-covered equipment such as diabetic supplies, back or knee braces, or continuous glucose
+                        monitors. I understand that my consent is not required as a condition of purchase and that I may
+                        revoke it at any time.
                     </p>
                 </div>
                 <button name="submit">See If I Qualify</button>
