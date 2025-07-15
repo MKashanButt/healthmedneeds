@@ -13,14 +13,15 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Illuminate\Support\Facades\Auth;
 
 class SquadMedicalSuppliesResource extends Resource
 {
     protected static ?string $model = SquadMedicalSupplies::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-circle-stack';
 
-    protected static ?string $modelLabel = 'Squad Medical Supplies';
+    protected static ?string $pluralLabel = 'Squad Medical Supplies';
 
     public static function form(Form $form): Form
     {
@@ -100,5 +101,10 @@ class SquadMedicalSuppliesResource extends Resource
     public static function canCreate(): bool
     {
         return false;
+    }
+
+    public static function canAccess(): bool
+    {
+        return Auth::user()->hasCompany('Squad Medical Supplies');
     }
 }

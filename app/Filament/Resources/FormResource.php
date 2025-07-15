@@ -5,6 +5,7 @@ namespace App\Filament\Resources;
 use App\Filament\Resources\FormResource\Pages;
 use App\Filament\Resources\FormResource\RelationManagers;
 use App\Models\Form as FormModel;
+use Filament\Facades\Filament;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -13,6 +14,7 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Illuminate\Support\Facades\Auth;
 use pxlrbt\FilamentExcel\Actions\Tables\ExportBulkAction;
 use pxlrbt\FilamentExcel\Actions\Tables\ExportAction;
 use pxlrbt\FilamentExcel\Exports\ExcelExport;
@@ -21,9 +23,9 @@ class FormResource extends Resource
 {
     protected static ?string $model = FormModel::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-circle-stack';
 
-    protected static ?string $modelLabel = 'Form Submission';
+    protected static ?string $pluralLabel = 'Bargain Medical Supply';
 
     public static function form(Form $form): Form
     {
@@ -144,5 +146,10 @@ class FormResource extends Resource
     public static function canEdit(Model $record): bool
     {
         return false;
+    }
+
+    public static function canAccess(): bool
+    {
+        return Auth::user()->hasCompany('Bargain Medical Supply');
     }
 }

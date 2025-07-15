@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Support\Str;
 
 class User extends Authenticatable
 {
@@ -51,5 +52,26 @@ class User extends Authenticatable
     public function company(): BelongsTo
     {
         return $this->belongsTo(Company::class);
+    }
+
+    public function isAdmin(): bool
+    {
+        return $this->email === 'admin@squad.com';
+    }
+    public function hasCompany(string $companySlug): bool
+    {
+        if (is_null($this->company_id)) {
+            return true;
+        }
+
+        $company = $this->company;
+
+        if (! $company) {
+            return false;
+        }
+
+        $expected = Str::slug($company->slug ?? $company->name);
+
+        return $expected === Str::slug($companySlug);
     }
 }
