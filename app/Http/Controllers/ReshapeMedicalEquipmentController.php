@@ -32,7 +32,7 @@ class ReshapeMedicalEquipmentController extends Controller
             ReshapeMedicalEquipment::create($validated);
             return response()->json([
                 'success' => true,
-                'message' => 'Medical supplies data stored successfully.',
+                'message' => 'Reshape Medical Equipments data stored successfully.',
                 'data'    => $validated,
             ], Response::HTTP_CREATED);
         } catch (ValidationException $e) {
