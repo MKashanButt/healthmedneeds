@@ -105,6 +105,6 @@ class ReshapeMedicalEquipmentResource extends Resource
 
     public static function canAccess(): bool
     {
-        return Auth::user()->hasCompany('Reshape Medical Equipment');
+        return Auth::user()->hasCompany('Reshape Medical Equipments');
     }
 }
