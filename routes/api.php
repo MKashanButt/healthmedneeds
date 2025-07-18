@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ReshapeMedicalEquipmentController;
 use App\Http\Controllers\SquadMedicalSuppliesController;
+use App\Models\S8MedicalEquipment;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -14,3 +15,6 @@ Route::post('/squad-medical-supplies', [SquadMedicalSuppliesController::class, '
 
 Route::post('/reshape-medical-equipments', [ReshapeMedicalEquipmentController::class, 'store'])
     ->name('reshape-medical-equipments.store');
+
+Route::post('/s8-medical-equipment', [S8MedicalEquipment::class, 'store'])
+    ->name('s8-medical-equipment.store');
